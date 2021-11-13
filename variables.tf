@@ -1,5 +1,5 @@
-variable "sample" {
-  description = "sample variable"
+variable "region" {
+  description = "Region to use for aws"
   type        = string
-  default     = "text"
+  default     = "us-east-1"
 }
