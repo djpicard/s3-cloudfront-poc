@@ -16,10 +16,10 @@ module "cloudfront_peloton" {
 
   # Optional inputs 
   # acm_certificate_arn            = string
-  aliases = ["pelotest-splft-poc.dev.onepeloton.com"]
+  aliases = [""]
   # cache_behavior_allowed_methods = list(any)
   # cache_behavior_cached_methods  = list(any)
-  # cloudfront_default_certificate = bool
+  cloudfront_default_certificate = true
   # comment                        = string
   default_root_object = ""
   # enabled                        = bool
