@@ -16,7 +16,7 @@ module "cloudfront_peloton" {
 
   # Optional inputs 
   acm_certificate_arn = "arn:aws:acm:us-east-1:152245890419:certificate/fae33519-87e6-40b1-b3c6-177d13222af1"
-  aliases             = ["spacelift-poc.onepeloton.com"]
+  aliases             = [""]
   # cache_behavior_allowed_methods = list(any)
   # cache_behavior_cached_methods  = list(any)
   # cloudfront_default_certificate = false
