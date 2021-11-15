@@ -16,7 +16,7 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cloudfront_peloton"></a> [cloudfront\_peloton](#module\_cloudfront\_peloton) | spacelift.io/djpicard/cloudfront-peloton/aws | 0.1.1 |
+| <a name="module_cloudfront_peloton"></a> [cloudfront\_peloton](#module\_cloudfront\_peloton) | spacelift.io/djpicard/cloudfront-peloton/aws | 0.1.2 |
 | <a name="module_s3_peloton"></a> [s3\_peloton](#module\_s3\_peloton) | spacelift.io/djpicard/s3-peloton/aws | n/a |
 
 ## Resources
