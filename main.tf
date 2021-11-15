@@ -13,7 +13,7 @@ module "cloudfront_peloton" {
 
   # Required inputs 
   comment        = ""
-  logging_bucket = module.s3_peloton.logging_bucket
+  logging_bucket = module.s3_peloton.log_bucket_id
 
   # Optional inputs 
   domain_name = "spacelift.dev-benefits.onepeloton.com"
