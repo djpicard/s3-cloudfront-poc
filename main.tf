@@ -8,7 +8,8 @@ module "s3_peloton" {
 resource "aws_cloudfront_origin_access_identity" "cloudfront_origin_access" {}
 
 module "cloudfront_peloton" {
-  source = "spacelift.io/djpicard/cloudfront-peloton/aws"
+  source  = "spacelift.io/djpicard/cloudfront-peloton/aws"
+  version = "0.1.1"
 
   # Required inputs 
   bucket_name = module.s3_peloton.bucket_id
