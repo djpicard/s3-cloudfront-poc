@@ -5,6 +5,8 @@ module "s3_peloton" {
   region = var.region
 }
 
+resource "aws_cloudfront_origin_access_identity" "cloudfront_origin_access" {}
+
 module "cloudfront_peloton" {
   source = "spacelift.io/djpicard/cloudfront-peloton/aws"
 
@@ -24,7 +26,7 @@ module "cloudfront_peloton" {
   # lambda_arn                     = string
   logging_config_bucket = module.s3_peloton.log_bucket_id
   # logging_config_include_cookies = bool
-  # origin_access_identity         = string
+  origin_access_identity = aws_cloudfront_origin_access_identity.cloudfront_origin_access.id
   # price_class                    = string
   region = var.region
 }
