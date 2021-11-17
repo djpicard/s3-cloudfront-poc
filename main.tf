@@ -2,7 +2,7 @@ module "s3_peloton" {
   source  = "spacelift.io/djpicard/s3-peloton/aws"
   version = "0.1.4"
 
-  name   = "${var.name}-peloton-poc-bucket"
+  name   = "${var.name}-peloton-poc-bucket-2"
   region = var.region
 }
 
