@@ -22,7 +22,7 @@ module "cloudfront_peloton" {
   # cache_behavior_cached_methods  = list(any)
   # cloudfront_default_certificate = false
   # comment                        = string
-  default_root_object = ""
+  default_root_object = "index.html"
   # enabled                        = bool
   # is_ipv6_enabled                = bool
   # lambda_arn                     = string
