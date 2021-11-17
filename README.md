@@ -29,6 +29,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_name"></a> [name](#input\_name) | Name of the bucket | `string` | `"spacelift"` | no |
 | <a name="input_region"></a> [region](#input\_region) | Region to use for aws | `string` | `"us-east-1"` | no |
 
 ## Outputs
