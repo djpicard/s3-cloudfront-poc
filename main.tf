@@ -1,5 +1,6 @@
 module "s3_peloton" {
-  source = "spacelift.io/djpicard/s3-peloton/aws"
+  source  = "spacelift.io/djpicard/s3-peloton/aws"
+  version = "0.1.4"
 
   # name   = string
   region = var.region
@@ -16,7 +17,7 @@ module "cloudfront_peloton" {
 
   # Optional inputs 
   acm_certificate_arn = "arn:aws:acm:us-east-1:152245890419:certificate/fae33519-87e6-40b1-b3c6-177d13222af1"
-  domain_name         = "spacelift.onepeloton.com"
+  domain_name         = module.s3_peloton.regional_domain_name
   # cache_behavior_allowed_methods = list(any)
   # cache_behavior_cached_methods  = list(any)
   # cloudfront_default_certificate = false
