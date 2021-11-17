@@ -9,14 +9,14 @@ resource "aws_cloudfront_origin_access_identity" "cloudfront_origin_access" {}
 
 module "cloudfront_peloton" {
   source  = "spacelift.io/djpicard/cloudfront-peloton/aws"
-  version = "0.1.2"
+  version = "0.1.4"
 
   # Required inputs 
   bucket_name = module.s3_peloton.bucket_id
 
   # Optional inputs 
   acm_certificate_arn = "arn:aws:acm:us-east-1:152245890419:certificate/fae33519-87e6-40b1-b3c6-177d13222af1"
-  aliases             = ["spacelift.onepeloton.com"]
+  domain_name         = "spacelift.onepeloton.com"
   # cache_behavior_allowed_methods = list(any)
   # cache_behavior_cached_methods  = list(any)
   # cloudfront_default_certificate = false
