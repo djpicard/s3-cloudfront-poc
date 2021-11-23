@@ -2,7 +2,7 @@ module "s3_peloton" {
   source  = "spacelift.io/djpicard/s3-peloton/aws"
   version = "0.1.4"
 
-  name   = "${var.name}-peloton-poc-bucket"
+  name   = "${var.name}-peloton-poc-bucket-2"
   region = var.region
 }
 
@@ -22,7 +22,7 @@ module "cloudfront_peloton" {
   # cache_behavior_cached_methods  = list(any)
   # cloudfront_default_certificate = false
   # comment                        = string
-  default_root_object = "index.html"
+  default_root_object = ""
   # enabled                        = bool
   # is_ipv6_enabled                = bool
   # lambda_arn                     = string
